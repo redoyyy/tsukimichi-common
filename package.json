@@ -22,8 +22,8 @@
     "version:package": "pnpm build && changeset version"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@types/node": "^24.0.1",
-    "changeset": "^0.2.6",
     "electron": "^40.0.0",
     "oxfmt": "^0.55.0",
     "oxlint": "^1.70.0",
