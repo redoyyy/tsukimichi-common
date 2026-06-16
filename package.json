@@ -19,7 +19,7 @@
     "lint": "oxlint",
     "changeset": "changeset",
     "publish:packages": "changeset publish",
-    "version:package": "pnpm build && changeset version"
+    "version:packages": "pnpm build && changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.0",

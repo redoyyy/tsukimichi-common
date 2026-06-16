@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ env.GITHUB_TOKEN }}
           fetch-depth: 0
@@ -37,7 +37,7 @@ jobs:
 
       - name: Setup pnpm
         id: setup-pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v6
         with:
           version: ${{ matrix.pnpm-version }}
           run_install: false
