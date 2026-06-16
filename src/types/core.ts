@@ -2,7 +2,7 @@ import type { LANGUAGE_KEY } from "../lib/language";
 
 /**
  * Represents the publication status of a series.
- * 
+ *
  * - `ongoing`: Series is currently being published
  * - `completed`: Series has finished publication
  * - `cancelled`: Series was cancelled before completion
@@ -10,14 +10,7 @@ import type { LANGUAGE_KEY } from "../lib/language";
  * - `upcoming`: Series is announced but not yet released
  * - `unknown`: Status cannot be determined
  */
-export type Status = 
-  | "ongoing"
-  | "completed"
-  | "cancelled"
-  | "hiatus"
-  | "upcoming"
-  | "unknown";
-
+export type Status = "ongoing" | "completed" | "cancelled" | "hiatus" | "upcoming" | "unknown";
 
 /**
  * Represents a language supported by the application.
@@ -33,4 +26,17 @@ export interface Language {
   iso6391: string;
   /** Optional region specification (e.g., "United States", "Brazil") */
   region?: string;
+}
+
+export interface ElectronCookie {
+  domain?: string;
+  expirationDate?: number;
+  hostOnly?: boolean;
+  httpOnly?: boolean;
+  name: string;
+  path?: string;
+  sameSite: "unspecified" | "no_restriction" | "lax" | "strict";
+  secure?: boolean;
+  session?: boolean;
+  value: string;
 }

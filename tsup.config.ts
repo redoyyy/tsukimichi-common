@@ -13,6 +13,5 @@ export default defineConfig({
   clean: true,
   outDir: "dist",
   target: "es2020",
-  external: ["electron"],
   tsconfig: "./tsconfig.json",
 });

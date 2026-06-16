@@ -1,5 +1,4 @@
-import type { Cookie } from "electron";
-import type { Status } from "../core";
+import type { ElectronCookie, Status } from "../core";
 import type { ExtensionFilterConfig, SearchOptions } from "../filters";
 import type { Episode } from "../series/anime";
 import type { Chapter, ChapterPages } from "../series/manga";
@@ -78,8 +77,8 @@ export interface GetFilterConfigParams {
 }
 
 export type GetAllCookies = (extensionId: string) => Promise<{
-  defaultCookies: Cookie[];
-  persistCookies: Cookie[];
+  defaultCookies: ElectronCookie[];
+  persistCookies: ElectronCookie[];
 }>;
 
 /** Constructor options for extension client */
